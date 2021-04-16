@@ -20,6 +20,7 @@
         });
     }
 
+
     $('.call-phone').on('click', function () {
         window.location = 'tel:+959784489866'
     })
