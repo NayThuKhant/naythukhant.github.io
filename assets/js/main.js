@@ -4,7 +4,6 @@
  * Author: BootstrapMade.com
  * License: https://bootstrapmade.com/license/
  */
-
 $(window).on("load", function () {
     // $("#preloader").fadeOut(3000);
     $("body").css({'overflow-y': 'scroll', 'background': 'white'});
@@ -12,6 +11,14 @@ $(window).on("load", function () {
 
 !(function ($) {
     "use strict";
+
+    //  Year Calculator
+    var now = new Date(); //"now"
+    var birthday = new Date("2001/03/03");  // some date
+    var differenceInMilliseconds = Math.abs(now - birthday);  // difference in milliseconds
+    var yearsOld = Math.floor(differenceInMilliseconds / 31536000000)
+
+    $("#age").html(yearsOld);
 
     // Hero typed
     if ($('.typed').length) {
@@ -128,7 +135,7 @@ $(window).on("load", function () {
     // jQuery counterUp
     $('[data-toggle="counter-up"]').counterUp({
         delay: 10,
-        time: 1000
+        time: 2000
     });
 
     // Skills section
