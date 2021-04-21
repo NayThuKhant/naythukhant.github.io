@@ -6,7 +6,7 @@
  */
 
 $(window).on("load", function () {
-    $("#preloader").fadeOut(3000);
+    // $("#preloader").fadeOut(3000);
     $("body").css({'overflow-y': 'scroll', 'background': 'white'});
 });
 
