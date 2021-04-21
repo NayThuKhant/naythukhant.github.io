@@ -4,6 +4,12 @@
  * Author: BootstrapMade.com
  * License: https://bootstrapmade.com/license/
  */
+
+$(window).on("load", function () {
+    $("#preloader").fadeOut(3000);
+    $("body").css({'overflow-y': 'scroll', 'background': 'white'});
+});
+
 !(function ($) {
     "use strict";
 
