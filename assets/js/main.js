@@ -34,6 +34,16 @@ $(window).on("load", function () {
     }
 
 
+    //  Related Websites
+    let liveWebsites = [
+        {
+            'name' : 'Movie IMDB',
+            'description' : 'AN IMDB Preview Website for movies with respective trailers',
+            'url' : 'https://movies-ntk.herokuapp.com/'
+        }
+    ]
+
+
     // $('.call-phone').on('click', function () {
     //     window.location = 'tel:+959784489866'
     // })
