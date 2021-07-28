@@ -12,26 +12,26 @@ $(window).on("load", function () {
 !(function ($) {
     "use strict";
 
-    // //  Year Calculator
-    // var now = new Date(); //"now"
-    // var birthday = new Date("2001/03/03");  // some date
-    // var differenceInMilliseconds = Math.abs(now - birthday);  // difference in milliseconds
-    // var yearsOld = Math.floor(differenceInMilliseconds / 31536000000)
-    //
-    // $("#age").html(yearsOld);
-    //
-    // // Hero typed
-    // if ($('.typed').length) {
-    //     var typed_strings = $(".typed").data('typed-items');
-    //     typed_strings = typed_strings.split(',')
-    //     new Typed('.typed', {
-    //         strings: typed_strings,
-    //         loop: true,
-    //         typeSpeed: 100,
-    //         backSpeed: 50,
-    //         backDelay: 2000
-    //     });
-    // }
+/*    //  Year Calculator
+    var now = new Date(); //"now"
+    var birthday = new Date("2001/03/03");  // some date
+    var differenceInMilliseconds = Math.abs(now - birthday);  // difference in milliseconds
+    var yearsOld = Math.floor(differenceInMilliseconds / 31536000000)
+
+    $("#age").html(yearsOld);*/
+
+    // Hero typed
+    if ($('.typed').length) {
+        var typed_strings = $(".typed").data('typed-items');
+        typed_strings = typed_strings.split(',')
+        new Typed('.typed', {
+            strings: typed_strings,
+            loop: true,
+            typeSpeed: 100,
+            backSpeed: 50,
+            backDelay: 2000
+        });
+    }
 
 
     // $('.call-phone').on('click', function () {
