@@ -12,13 +12,13 @@ $(window).on("load", function () {
 !(function ($) {
     "use strict";
 
-/*    //  Year Calculator
-    var now = new Date(); //"now"
-    var birthday = new Date("2001/03/03");  // some date
-    var differenceInMilliseconds = Math.abs(now - birthday);  // difference in milliseconds
-    var yearsOld = Math.floor(differenceInMilliseconds / 31536000000)
+    /*    //  Year Calculator
+        var now = new Date(); //"now"
+        var birthday = new Date("2001/03/03");  // some date
+        var differenceInMilliseconds = Math.abs(now - birthday);  // difference in milliseconds
+        var yearsOld = Math.floor(differenceInMilliseconds / 31536000000)
 
-    $("#age").html(yearsOld);*/
+        $("#age").html(yearsOld);*/
 
     // Hero typed
     if ($('.typed').length) {
@@ -37,11 +37,31 @@ $(window).on("load", function () {
     //  Related Websites
     let liveWebsites = [
         {
-            'name' : 'Movie IMDB',
-            'description' : 'AN IMDB Preview Website for movies with respective trailers',
-            'url' : 'https://movies-ntk.herokuapp.com/'
+            'name': 'Movie IMDB',
+            'description': 'AN IMDB Preview Website for movies with respective trailers',
+            'url': 'https://movies-ntk.herokuapp.com/'
+        },
+        {
+            'name': 'Covid 19 Tracking App',
+            'description': 'A counter App For Covid 19 Positive Patients',
+            'url': 'https://covid19-ntk.web.app/'
+        },
+        {
+            'name': 'Help Covid 19 Patients',
+            'description': 'Help Covid 19 Patients',
+            'url': 'https://covidmm.glideapp.io/'
         }
     ]
+
+    let liveWebsitesHtml = ''
+
+    liveWebsites.forEach((website) => {
+        liveWebsitesHtml = liveWebsitesHtml.concat(`
+            <li><a href="${website.url}">${website.name}</a></li>
+        `)
+    })
+
+    $('#projects').html(liveWebsitesHtml)
 
 
     // $('.call-phone').on('click', function () {
