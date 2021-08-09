@@ -33,6 +33,13 @@ $(window).on("load", function () {
         });
     }
 
+    // Domain Name
+    let myWebsite = document.location.hostname
+    console.log(myWebsite)
+    $('#myWebsite').text(myWebsite)
+    $('#myWebsite').attr('href', myWebsite)
+
+
 
     //  Related Websites
     let liveWebsites = [
